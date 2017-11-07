@@ -27,7 +27,7 @@ Basic. Pass in your pickup area post code.
 ```bash
 # when unavailable
 python cli.py SE14YU
-Checked 11 stores. Not available yet
+Checked 11 stores near you. Not available yet
 
 # when available
 python cli.py SE14YU

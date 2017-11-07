@@ -1258,7 +1258,7 @@ def test_can_i_order_iphone_x_says_no_when_not_yet_available(mock_requests):
 
     can_i, detail = can_i_order_iphone_x(post_code='se14yu')
     assert can_i is False
-    assert detail == 'Checked 11 stores. Not available yet'
+    assert detail == 'Checked 11 stores near you. Not available yet'
 
 
 @patch('cli.requests')

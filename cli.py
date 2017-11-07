@@ -42,7 +42,7 @@ def can_i_order_iphone_x(post_code, part_id=PART_ID):
     ]
 
     if not stores_with_stock:
-        return False, 'Checked {} stores. Not available yet'.format(
+        return False, 'Checked {} stores near you. Not available yet'.format(
             len(stores_info)
         )
     else:
