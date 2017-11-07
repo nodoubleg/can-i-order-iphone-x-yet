@@ -1267,4 +1267,4 @@ def test_can_i_order_iphone_x_says_yes_when_available(mock_requests):
 
     can_i, detail = can_i_order_iphone_x(post_code='se14yu')
     assert can_i is True
-    assert detail == 'Available at:\nApple Regent Street'
+    assert detail == 'IPhone X now available at:\nApple Regent Street'

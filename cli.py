@@ -46,7 +46,7 @@ def can_i_order_iphone_x(post_code, part_id=PART_ID):
             len(stores_info)
         )
     else:
-        detail = 'Available at:\n{}'.format(
+        detail = 'IPhone X now available at:\n{}'.format(
             '\n'.join(s['address']['address'] for s in stores_with_stock)
         )
         return True, detail

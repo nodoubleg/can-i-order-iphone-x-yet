@@ -18,7 +18,7 @@ Pass in your pickup area post code and mobile number.
 TWILIO_ACCOUNT_SID=<sid_here> TWILIO_AUTH_TOKEN=<token_here> python cli.py SW33XB 447944423432
 ```
 
-**You will recieve a text `Available at: Apple Regent Street` if there is stock.**
+**You will recieve a text `IPhone X now available at: Apple Regent Street` if there is stock.**
 
 ### Noob Usage
 
@@ -31,6 +31,6 @@ Checked 11 stores. Not available yet
 
 # when available
 python cli.py SE14YU
-Available at:
+IPhone X now available at:
 Apple Regent Street
 ```
