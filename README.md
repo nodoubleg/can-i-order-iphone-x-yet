@@ -1,5 +1,6 @@
 # can-i-order-iphone-x-yet
-Script to tell me when a store has an iphone x available
+
+Script to tell me when a store has an IPhone X 64GB Space Gray in stock.
 
 ### Installation
 
@@ -17,7 +18,7 @@ Pass in your pickup area post code and mobile number.
 TWILIO_ACCOUNT_SID=<sid_here> TWILIO_AUTH_TOKEN=<token_here> python cli.py SW33XB 447944423432
 ```
 
-You will recieve a text "Available at: Apple Regent Street"
+You will recieve a text `Available at: Apple Regent Street` if there is stock.
 
 --------
 
