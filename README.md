@@ -8,7 +8,7 @@ Script to tell me when a store has an IPhone X 64GB Space Gray in stock.
 pip install -r requirements.txt
 ```
 
-### Usage
+### Pro Usage
 
 Get a text when available (requires https://www.twilio.com/try-twilio).
 
@@ -18,9 +18,9 @@ Pass in your pickup area post code and mobile number.
 TWILIO_ACCOUNT_SID=<sid_here> TWILIO_AUTH_TOKEN=<token_here> python cli.py SW33XB 447944423432
 ```
 
-You will recieve a text `Available at: Apple Regent Street` if there is stock.
+**You will recieve a text `Available at: Apple Regent Street` if there is stock.**
 
---------
+### Noob Usage
 
 Basic. Pass in your pickup area post code.
 
