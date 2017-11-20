@@ -16,8 +16,8 @@ from docopt import docopt
 ACCOUNT_SID = os.environ.get('TWILIO_ACCOUNT_SID')
 AUTH_TOKEN = os.environ.get('TWILIO_AUTH_TOKEN')
 SMS_ENABLED = ACCOUNT_SID and AUTH_TOKEN
-PART_ID = 'MQAC2B/A'  # IPhone X Space Grey 64GB
-
+#PART_ID = 'MQAC2B/A'  # IPhone X Space Grey 64GB
+PART_ID = 'MQAU2LL/A'  # tmo iPhone X Space Grey 256GB
 
 def _get_stores_availability(post_code, part_id):
     url = (
