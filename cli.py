@@ -21,8 +21,8 @@ PART_ID = 'MQAC2B/A'  # IPhone X Space Grey 64GB
 
 def _get_stores_availability(post_code, part_id):
     url = (
-        'https://www.apple.com/uk/shop/retail/pickup-message?pl=true'
-        '&parts.0={part_id}&location={post_code}'
+	'https://www.apple.com/shop/retail/pickup-message?pl=true'
+	'&cppart=TMOBILE/US&parts.0={part_id}&location={post_code}'
     ).format(part_id=part_id, post_code=post_code)
     resp = requests.get(url)
     resp.raise_for_status()
