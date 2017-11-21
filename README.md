@@ -40,6 +40,8 @@ Just because you shouldn't doesn't mean you can't.
 
 This will query the Apple store API every 5 minutes for 72 hours.
 
-1. Update `Dockerfile` with your Twilio API info.
+1. copy `Dockerfile_example` to `Dockerfile` (or whatever) and with your Twilio API info.
 2. Run `docker build -t iphone-x-yet`
 3. `docker run -d iphone-x-yet`
+4. Order your damn iPhone.
+5. Throw this 💩 away.
