@@ -34,3 +34,12 @@ python cli.py SE14YU
 IPhone X now available at:
 Apple Regent Street
 ```
+
+## Running from Docker?
+Just because you shouldn't doesn't mean you can't.
+
+This will query the Apple store API every 5 minutes for 72 hours.
+
+1. Update `Dockerfile` with your Twilio API info.
+2. Run `docker build -t iphone-x-yet`
+3. `docker run -d iphone-x-yet`

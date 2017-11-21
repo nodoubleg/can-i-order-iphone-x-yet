@@ -1,0 +1,24 @@
+# copy this to Dockerfile to run
+FROM nodoubleg/can-i-order-iphone-x-yet
+# populate this to get text message via Twilio
+ENV TWILIO_ACCOUNT_SID
+ENV TWILIO_AUTH_TOKEN
+# set this to your 5-digit US zip code
+ENV zip 00000
+# 10-digit US phone number
+ENV phone 5551234567
+
+ENV DOITPATH /srv/can-i-order-iphone-x-yet
+ENV DOITENV $DOITPATH/doit.env
+ENV DOITSH $DOITPATH/doit.sh
+
+# create env that we'll source on every run
+RUN echo export TWILIO_ACCOUNT_SID=$TWILIO_ACCOUNT_SID >> $DOITENV
+RUN echo export TWILIO_AUTH_TOKEN=$TWILIO_AUTH_TOKEN >> $DOITENV
+RUN echo export zip=$zip >> $DOITENV
+RUN echo export phone=$phone >> $DOITENV
+
+# we'll run every 2 minutes by default. Adjust crontab if necessary.
+RUN crontab $DOITPATH/crontab
+
+CMD /usr/sbin/crond -l 6 -L /var/log/cron.log && sleep 259200
